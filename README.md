@@ -61,13 +61,16 @@ developing your own process.
 ## Your Notes Here
 
 - Add a new toy when the toy form is submitted
-
+  It was a typographical error
   - How I debugged:
+  the error was coming from a typing error wher instead of writing Toy.create it was initialixed as Toys.created making rails confused because there is no such model as Toys
+  i had to check the console for errors and it was returning an error of uninitialized constant Toys
 
 - Update the number of likes for a toy
-
+it was not renering json so i added that line
   - How I debugged:
-
+checked with the server and saw what was being required then added it
 - Donate a toy to Goodwill (and delete it from our database)
-
+there was no route for deleting so i added the route
   - How I debugged:
+checked the code noticed we are calling destroy in the controller but we havent included the destroy route
